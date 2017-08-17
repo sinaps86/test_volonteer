@@ -11,7 +11,7 @@
 * git remote add origin git@gitlab.tigrio.local:tigrio/my-app.git
 * git add *
 * git commit -m "Initialized with Web App Kit Webpack"
-* git push -u origin/master
+* git push origin/master
 
 
 ## Cоздать новую страницу или компонент
