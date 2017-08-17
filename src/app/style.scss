@@ -1,0 +1,22 @@
+@import '~normalize-scss/sass/normalize';
+@import '~reset-css/reset';
+@import '../styles/colors.scss';
+@import '../styles/fonts-rule.scss';
+
+html, body {
+    height: 100%;
+}
+
+body {
+  &.overflow {
+    overflow-y: hidden;
+  }
+}
+
+#app {
+  width: 100%;
+  & > div{
+    width: 100%;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  }
+}
