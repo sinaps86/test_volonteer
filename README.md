@@ -16,7 +16,7 @@
 
 ## Cоздать новую страницу или компонент
 * Для страницы в консоли перейти в папку pages, написать makevue pageName (название страницы)
-* Для страницы в консоли перейти в папку components, написать makevue comnonentName (название компонента)
+* Для компонента в консоли перейти в папку components, написать makevue comnonentName (название компонента)
 
 ## Заголовок проекта
 Открыть файл index, найти title, внутри него написать название проекта
@@ -43,3 +43,5 @@ npm run build --report
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+## Почитать про vue js
+[vue js]: https://ru.vuejs.org/
