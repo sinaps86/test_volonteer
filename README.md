@@ -4,7 +4,9 @@
 * cd MyApp
 
 ## Реинициализировать Git
-* rm -rf .git
+* Удаление папки .git
+    * Для windows rd /s/q .git
+    * Для Linux rm -rf .git
 * git init
 * git remote add origin git@gitlab.tigrio.local:tigrio/my-app.git
 * git add *
