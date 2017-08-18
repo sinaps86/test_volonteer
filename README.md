@@ -15,8 +15,13 @@
 
 
 ## Cоздать новую страницу или компонент
-* Для страницы в консоли перейти в папку pages, написать makevue pageName (название страницы)
-* Для компонента в консоли перейти в папку components, написать makevue comnonentName (название компонента)
+* Команда
+    * Для windows - установить bash, перейти в папку src
+        * для создания страницы - makevue.sh pages/pageName
+        * для создания компонента - makevue.sh components/componentName
+    * Для Linux alias makevue="~/scripts/makevue.sh"
+        * для страницы в консоли перейти в папку pages, написать makevue pageName (название страницы)
+        * для компонента в консоли перейти в папку components, написать makevue comnonentName (название компонента)
 
 ## Заголовок проекта
 Открыть файл index, найти title, внутри него написать название проекта
