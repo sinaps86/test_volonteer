@@ -1,20 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-//Чтобы подключить страницу (не забудь прописать страницу в routes)
-//@import pageName from  'path to pageName'
+import welcome_page from '../pages/welcom-page/welcome-page'
 
-//чтобы подключить компонент на какую-либо страницу, необходимо его создать или загрузить. 
-//После этого на нужной странице подключить через @import и после поля data написать - components: { componentName1, [componentName2, ...] }
-
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '',
       name: '',
-      component: '',
+      component: welcome_page,
     }
   ],
    mode: 'history'

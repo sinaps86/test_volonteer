@@ -1,0 +1,26 @@
+@import "../../styles/colors";
+@import "../../styles/font-rules";
+
+.welcome-page {
+  font-family: sans-serif;
+
+  h1, h2 {
+    color: $color-font-white;
+  }
+
+  h1 {
+    padding: 348px 0 0 80px;
+    font-size: 64px;
+  }
+
+  h2 {
+    padding: 14px 0 0 80px;
+    font-size: 36px;
+  }
+
+
+  .welcome-header {
+    height: 512px;
+    background: url("../../assets/images/welcome-header.jpg") no-repeat center center/cover;
+  }
+}
