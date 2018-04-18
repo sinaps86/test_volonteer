@@ -2,10 +2,22 @@ export default {
     name: 'welcome-page',
 
     data: function () {
-        return {}
+        return {
+          header_height: ""
+        }
     },
     components: {
 
+    },
+
+    created() {
+
+    },
+
+    computed: {
+      getContentHeight() {
+
+      }
     },
 
     methods: {

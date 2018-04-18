@@ -18,9 +18,31 @@
     font-size: 36px;
   }
 
-
   .welcome-header {
     height: 512px;
     background: url("../../assets/images/welcome-header.jpg") no-repeat center center/cover;
+  }
+
+  .welcome-double-flex {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .welcome-double-flex-left, .welcome-double-flex-right {
+    min-height: 512px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(0,0,0,.2);
+  }
+
+  .welcome-double-flex-left {
+
+  }
+
+  .welcome-double-flex-right {
+
   }
 }
