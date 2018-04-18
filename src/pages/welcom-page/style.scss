@@ -30,11 +30,12 @@
 
   .welcome-double-flex-left, .welcome-double-flex-right {
     min-height: 512px;
+    padding-top: 48px;
     flex: 1 1 50%;
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     background-color: rgba(0,0,0,.2);
   }
 
@@ -43,6 +44,41 @@
   }
 
   .welcome-double-flex-right {
+
+  }
+
+  .weelman, .weelman-helper {
+    width: 218px;
+    height: 260px;
+    margin-bottom: 39px;
+    background: url("../../assets/images/weelman.svg") no-repeat center/cover;
+  }
+
+  .weelman {
+
+    &.active {
+
+    }
+    &:hover {
+      background-image: url("../../assets/images/weelman-active.svg");
+      transition: all 300ms;
+    }
+  }
+
+  .weelman-helper {
+    &:hover {
+      background-image: url("../../assets/images/weelman-helper.svg");
+      transition: all 300ms;
+    }
+  }
+
+  .welcome-title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .button-one {
 
   }
 }

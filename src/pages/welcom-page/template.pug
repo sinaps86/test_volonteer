@@ -6,11 +6,17 @@
     .welcome-double-flex(
     v-bind:style="{height: getContentHeight}"
     )
-      .welcome-double-flex-left
+      .welcome-double-flex-left(
+      v-on:mouseover="hover('left')"
+      v-on:mouseleave="blur('left')"
+      )
         .weelman
-        .welcom-title
-        .button Продолжить
-      .welcome-double-flex-right
-        .weelman
-        .welcom-title
-        .button(v-show="") Продолжить
+        .welcome-title Мне нужна помощь
+        .button-one Продолжить
+      .welcome-double-flex-right(
+      v-on:mouseover="hover('right')"
+      v-on:mouseleave="blur('right')"
+      )
+        .weelman-helper
+        .welcome-title я хочу помочь
+        .button-one Продолжить

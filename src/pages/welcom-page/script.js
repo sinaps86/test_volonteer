@@ -3,7 +3,11 @@ export default {
 
     data: function () {
         return {
-          header_height: ""
+          header_height: "",
+          blocks: {
+            left: {active: false},
+            right: {active: false}
+          }
         }
     },
     components: {
@@ -21,6 +25,26 @@ export default {
     },
 
     methods: {
+      hover(who) {
+        switch (who) {
+          case "left":
+            this.blocks.left.active = true;
+            break;
+          case "right":
+            this.blocks.right.active = true;
+            break;
+        }
+      },
 
+      blur(who) {
+        switch (who) {
+          case "left":
+            this.blocks.left.active = false;
+            break;
+          case "right":
+            this.blocks.right.active = false;
+            break;
+        }
+      }
     }
 };

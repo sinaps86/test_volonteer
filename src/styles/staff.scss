@@ -1,0 +1,14 @@
+@import "colors";
+@import "font-rules";
+
+.button-one {
+  display: inline-block;
+  min-width: 300px;
+  padding: 19px 24px 19px 24px;
+  text-align: center;
+  border-radius: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: $color-accent;
+  color: $color-font-black;
+}
