@@ -19,12 +19,15 @@ export default {
     },
 
     computed: {
-      getContentHeight() {
-
+      //Получение высоты для хедера и/или блока с контентом
+      getHeight() {
+        let height = this.$store.state.height || 300;
+        return height / 2;
       }
     },
 
     methods: {
+      //Имитация поведения ховера
       hover(who) {
         switch (who) {
           case "left":
@@ -36,6 +39,7 @@ export default {
         }
       },
 
+      //Имитация поведения ховера
       blur(who) {
         switch (who) {
           case "left":
@@ -47,6 +51,7 @@ export default {
         }
       },
 
+      //Переадресация на нужную страницу
       goTo(path) {
         this.$router.push({name: path});
       }

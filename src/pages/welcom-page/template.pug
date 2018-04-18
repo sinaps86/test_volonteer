@@ -1,10 +1,13 @@
 .welcome-page
-  header.welcome-header(ref="welcome_header")
+  header.welcome-header(
+  ref="welcome_header"
+  v-bind:style="{'min-height': getHeight + 'px'}"
+  )
     h1 Название сервиса
     h2 Мы помогаем тем, кому нужна помощь, и тем, кто хочет помочь.
   section.welcome-section
     .welcome-double-flex(
-    v-bind:style="{height: getContentHeight}"
+    v-bind:style="{'min-height': getHeight + 'px'}"
     )
       transition(name="left")
         .welcome-double-flex-left(
