@@ -13,12 +13,17 @@
     .input-container
       .input-title {{password.title}}
       input.input-field(
+      v-bind:type="password.type"
       v-bind:placeholder="password.placeholder"
       v-bind:value="password.value"
       v-on:input="inputtingPassword"
       v-on:focus="focusing(password)"
       v-on:blur="blurring(password)"
       )
-    .button-one Войти
-    .button-text Регистрация
+    .button-one(
+    v-on:click.stop="logInHandler"
+    ) Войти
+    .button-text(
+    v-on:click.stop="goToRegistration"
+    ) Регистрация
     .form-errors

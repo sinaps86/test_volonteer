@@ -17,6 +17,10 @@ export default {
 	  resizer() {
       this.$store.commit("setWidth", window.innerWidth);
       this.$store.commit("setHeight", window.innerHeight);
+    },
+
+    errorHandler(error) {
+
     }
   }
 }

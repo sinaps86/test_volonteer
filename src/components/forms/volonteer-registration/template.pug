@@ -1,1 +1,48 @@
 .volonteer-registration
+  .form-container
+    .form-title Регистрация
+    .input-container
+      .input-title {{login.title}}
+      input.input-field(
+      v-bind:placeholder="login.placeholder"
+      v-bind:value="login.value"
+      v-on:input="inputtingLogin"
+      v-on:focus="focusing(login)"
+      v-on:blur="blurring(login)"
+      )
+    .input-container
+      .input-title {{phone.title}}
+      input.input-field(
+      v-bind:placeholder="phone.placeholder"
+      v-bind:value="phone.value"
+      v-on:input="inputtingPhone"
+      v-on:focus="focusing(phone)"
+      v-on:blur="blurring(phone)"
+      )
+    .input-container
+      .input-title {{password.title}}
+      input.input-field(
+      v-bind:type="password.type"
+      v-bind:placeholder="password.placeholder"
+      v-bind:value="password.value"
+      v-on:input="inputtingPassword(password, $event)"
+      v-on:focus="focusing(password)"
+      v-on:blur="blurring(password)"
+      )
+    .input-container
+      .input-title {{repeat.title}}
+      input.input-field(
+      v-bind:type="repeat.type"
+      v-bind:placeholder="repeat.placeholder"
+      v-bind:value="repeat.value"
+      v-on:input="inputtingPassword(repeat, $event)"
+      v-on:focus="focusing(repeat)"
+      v-on:blur="blurring(repeat)"
+      )
+    .button-one(
+    v-on:click.stop="registrationHandler"
+    ) Регистрация
+    .button-text(
+    v-on:click.stop="goToLogIn"
+    ) Логин
+    .form-errors

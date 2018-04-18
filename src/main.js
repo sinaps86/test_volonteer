@@ -7,6 +7,17 @@ import store from './store'
 
 Vue.config.productionTip = false;
 
+Vue.mixin({
+  data() {
+    return {
+      isProcessing: false
+    }
+  },
+  methods: {
+
+  }
+});
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
