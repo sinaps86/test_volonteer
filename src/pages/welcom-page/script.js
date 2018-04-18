@@ -45,6 +45,12 @@ export default {
             this.blocks.right.active = false;
             break;
         }
+      },
+
+      goTo(path) {
+        //this.$router.push({name: path});
       }
-    }
+    },
+
+
 };

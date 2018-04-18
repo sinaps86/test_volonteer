@@ -11,4 +11,13 @@
   font-weight: bold;
   background-color: $color-accent;
   color: $color-font-black;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: inset -4px 4px 8px rgba(125,125,125,.4);
+  }
+
+  &:active {
+    background-color: $color-accent-dark;
+  }
 }

@@ -7,16 +7,26 @@
     v-bind:style="{height: getContentHeight}"
     )
       .welcome-double-flex-left(
+      v-bind:class="{active: blocks.left.active}"
       v-on:mouseover="hover('left')"
       v-on:mouseleave="blur('left')"
       )
-        .weelman
+        .weelman(v-bind:class="{active: blocks.left.active}")
         .welcome-title Мне нужна помощь
-        .button-one Продолжить
+        .button-one(
+        v-bind:class="{active: blocks.left.active}"
+        v-on:click.stop="goTo('help')"
+        v-on:mousedown.prevent=""
+        ) Продолжить
       .welcome-double-flex-right(
       v-on:mouseover="hover('right')"
       v-on:mouseleave="blur('right')"
+      v-bind:class="{active: blocks.right.active}"
       )
-        .weelman-helper
+        .weelman-helper(v-bind:class="{active: blocks.right.active}")
         .welcome-title я хочу помочь
-        .button-one Продолжить
+        .button-one(
+        v-bind:class="{active: blocks.right.active}"
+        v-on:click="goTo('volonteer')"
+        v-on:mousedown.prevent=""
+        ) Продолжить
