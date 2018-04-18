@@ -6,27 +6,29 @@
     .welcome-double-flex(
     v-bind:style="{height: getContentHeight}"
     )
-      .welcome-double-flex-left(
-      v-bind:class="{active: blocks.left.active}"
-      v-on:mouseover="hover('left')"
-      v-on:mouseleave="blur('left')"
-      )
-        .weelman(v-bind:class="{active: blocks.left.active}")
-        .welcome-title Мне нужна помощь
-        .button-one(
+      transition(name="left")
+        .welcome-double-flex-left(
         v-bind:class="{active: blocks.left.active}"
-        v-on:click.stop="goTo('help')"
-        v-on:mousedown.prevent=""
-        ) Продолжить
-      .welcome-double-flex-right(
-      v-on:mouseover="hover('right')"
-      v-on:mouseleave="blur('right')"
-      v-bind:class="{active: blocks.right.active}"
-      )
-        .weelman-helper(v-bind:class="{active: blocks.right.active}")
-        .welcome-title я хочу помочь
-        .button-one(
+        v-on:mouseover="hover('left')"
+        v-on:mouseleave="blur('left')"
+        )
+          .weelman(v-bind:class="{active: blocks.left.active}")
+          .welcome-title Мне нужна помощь
+          .button-one(
+          v-bind:class="{active: blocks.left.active}"
+          v-on:click.stop="goTo('help')"
+          v-on:mousedown.prevent=""
+          ) Продолжить
+      transition(name="right")
+        .welcome-double-flex-right(
+        v-on:mouseover="hover('right')"
+        v-on:mouseleave="blur('right')"
         v-bind:class="{active: blocks.right.active}"
-        v-on:click="goTo('volonteer')"
-        v-on:mousedown.prevent=""
-        ) Продолжить
+        )
+          .weelman-helper(v-bind:class="{active: blocks.right.active}")
+          .welcome-title я хочу помочь
+          .button-one(
+          v-bind:class="{active: blocks.right.active}"
+          v-on:click="goTo('volonteer_sign')"
+          v-on:mousedown.prevent=""
+          ) Продолжить

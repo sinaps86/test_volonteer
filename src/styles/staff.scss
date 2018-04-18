@@ -14,10 +14,11 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: inset -4px 4px 8px rgba(125,125,125,.4);
+    box-shadow: 3px 3px 4px rgba(125,125,125,.4);
   }
 
   &:active {
+    box-shadow: inset -4px 4px 6px rgba(125,125,125,.4);
     background-color: $color-accent-dark;
   }
 }

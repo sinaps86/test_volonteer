@@ -1,0 +1,10 @@
+@import "../../../styles/colors";
+@import "../../../styles/font-rules";
+
+.sign-in-page {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: url("../../../assets/images/main-bg.jpg") no-repeat center/cover;
+}

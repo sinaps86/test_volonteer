@@ -48,7 +48,7 @@ export default {
       },
 
       goTo(path) {
-        //this.$router.push({name: path});
+        this.$router.push({name: path});
       }
     },
 
