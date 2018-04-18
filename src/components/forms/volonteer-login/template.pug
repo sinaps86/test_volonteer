@@ -1,8 +1,24 @@
 .volonteer-login
   .form-container
-    .form-title
+    .form-title Авторизация
     .input-container
-      .input-title
-      .input-field
-    .button-one Регистрация
+      .input-title {{login.title}}
+      input.input-field(
+      v-bind:placeholder="login.placeholder"
+      v-bind:value="login.value"
+      v-on:input="inputtingLogin"
+      v-on:focus="focusing(login)"
+      v-on:blur="blurring(login)"
+      )
+    .input-container
+      .input-title {{password.title}}
+      input.input-field(
+      v-bind:placeholder="password.placeholder"
+      v-bind:value="password.value"
+      v-on:input="inputtingPassword"
+      v-on:focus="focusing(password)"
+      v-on:blur="blurring(password)"
+      )
+    .button-one Войти
+    .button-text Регистрация
     .form-errors
