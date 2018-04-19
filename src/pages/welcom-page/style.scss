@@ -2,7 +2,16 @@
 @import "../../styles/font-rules";
 
 .welcome-page {
+  box-sizing: border-box;
   font-family: sans-serif;
+
+  .welcome-section {
+    box-sizing: border-box;
+  }
+
+  .welcome-double-flex {
+    box-sizing: border-box;
+  }
 
   h1, h2 {
     color: $color-font-white;
@@ -13,17 +22,20 @@
   }
 
   h1 {
-    padding: 348px 0 0 80px;
+    padding: 0 0 14px 80px;
     font-size: 64px;
   }
 
   h2 {
-    padding: 14px 0 0 80px;
+    padding: 0 0 28px 80px;
     font-size: 36px;
   }
 
   .welcome-header {
-    height: 512px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
     background: url("../../assets/images/welcome-header.jpg") no-repeat center center/cover;
 
     @media (max-width: 920px) {
@@ -40,8 +52,7 @@
 
   .welcome-double-flex-left, .welcome-double-flex-right {
     box-sizing: border-box;
-    min-height: 512px;
-    padding: 48px 48px 0 48px;
+    padding: 48px;
     flex: 1 1 50%;
     display: flex;
     flex-flow: column nowrap;

@@ -22,6 +22,7 @@ export default {
       //Получение высоты для хедера и/или блока с контентом
       getHeight() {
         let height = this.$store.state.height || 300;
+        console.warn(height / 2);
         return height / 2;
       }
     },
