@@ -9,9 +9,6 @@
     box-sizing: border-box;
   }
 
-  .welcome-double-flex {
-    box-sizing: border-box;
-  }
 
   h1, h2 {
     color: $color-font-white;
@@ -32,6 +29,7 @@
   }
 
   .welcome-header {
+    min-height: 300px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
@@ -45,6 +43,7 @@
   }
 
   .welcome-double-flex {
+    min-height: 300px;
     box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
@@ -92,10 +91,10 @@
   }
 
   .weelman, .weelman-helper {
-    width: 218px;
+    width: 260px;
     height: 260px;
     margin-bottom: 39px;
-    background: url("../../assets/images/weelman.svg") no-repeat center/cover;
+    background: url("../../assets/images/weelman.svg") no-repeat center/contain;
   }
 
   .weelman {

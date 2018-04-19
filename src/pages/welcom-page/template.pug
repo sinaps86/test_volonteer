@@ -1,21 +1,25 @@
 .welcome-page
   header.welcome-header(
   ref="welcome_header"
-  v-bind:style="{'min-height': getHeight + 'px'}"
+  v-bind:style="{'height': getHeight + 'px'}"
   )
     h1 Название сервиса
     h2 Мы помогаем тем, кому нужна помощь, и тем, кто хочет помочь.
   section.welcome-section
     .welcome-double-flex(
-    v-bind:style="{'min-height': getHeight + 'px'}"
+    v-bind:style="{'height': getHeight + 'px'}"
     )
       transition(name="left")
         .welcome-double-flex-left(
         v-bind:class="{active: blocks.left.active}"
+        v-bind:style="{padding: getPadding + 'px'}"
         v-on:mouseover="hover('left')"
         v-on:mouseleave="blur('left')"
         )
-          .weelman(v-bind:class="{active: blocks.left.active}")
+          .weelman(
+          v-bind:class="{active: blocks.left.active}"
+          v-bind:style="[{width: getPictureWidth + 'px'}, {height: getPictureHeight + 'px'}]"
+          )
           .welcome-title Мне нужна помощь
           .button-one(
           v-bind:class="{active: blocks.left.active}"
@@ -27,8 +31,12 @@
         v-on:mouseover="hover('right')"
         v-on:mouseleave="blur('right')"
         v-bind:class="{active: blocks.right.active}"
+        v-bind:style="{padding: getPadding + 'px'}"
         )
-          .weelman-helper(v-bind:class="{active: blocks.right.active}")
+          .weelman-helper(
+          v-bind:class="{active: blocks.right.active}"
+          v-bind:style="[{width: getPictureWidth + 'px'}, {height: getPictureHeight + 'px'}]"
+          )
           .welcome-title я хочу помочь
           .button-one(
           v-bind:class="{active: blocks.right.active}"
