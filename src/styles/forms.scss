@@ -1,3 +1,46 @@
 @import "./colors";
 @import "./font-rules";
 
+.form-container {
+  width: 300px;
+  font-family: sans-serif;
+
+  .button-one {
+    margin-top: 40px;
+  }
+
+  .button-text {
+    margin-top: 27px;
+  }
+}
+
+.form-title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 900;
+  color: $color-font-white
+}
+
+.input-container {
+  &:nth-of-type(n + 2) {
+    margin-top: 20px;
+  }
+}
+
+.input-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.input-field {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 17px 0 17px 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: $color-font-black;
+  background-color: #d8d8d8;
+}
